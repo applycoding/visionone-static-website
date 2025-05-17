@@ -1,0 +1,274 @@
+/* Custom styles for Vision One Tech website */
+
+:root {
+  --primary-color: #000000; /* Black for "Vision One" in the logo */
+  --secondary-color: #393c41; /* Dark gray for text */
+  --accent-color: #14b5d6; /* Teal/cyan blue for "Tech" in the logo */
+  --light-color: #FFFFFF; /* White */
+  --dark-color: #222;
+  --transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Gotham SSm', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: var(--primary-color);
+  overflow-x: hidden;
+}
+
+/* Navbar styles */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: var(--transition);
+  padding: 1rem 2rem;
+  font-weight: 500;
+}
+
+.navbar-brand img {
+  height: 30px;
+}
+
+.navbar-dark {
+  background-color: rgba(255, 255, 255, 0.9); /* White background for logo with black text */
+  backdrop-filter: blur(10px);
+}
+
+.navbar-light {
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  margin: 0 0.2rem;
+  color: var(--primary-color) !important; /* Black text to match "Vision One" in logo */
+}
+
+.nav-link:hover {
+  color: var(--accent-color) !important; /* Teal/cyan blue on hover to match "Tech" in logo */
+}
+
+/* Hero section styles */
+.hero-section {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20vh 2rem 5vh;
+  position: relative;
+  color: var(--light-color);
+}
+
+.hero-section.light-text {
+  color: var(--light-color);
+}
+
+.hero-section.dark-text {
+  color: var(--dark-color);
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
+}
+
+.hero-content p {
+  font-size: 14px;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.btn-custom {
+  border-radius: 20px; /* Tesla uses rounded buttons */
+  padding: 0.75rem 2.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: var(--transition);
+}
+
+.btn-primary-custom {
+  background-color: var(--accent-color); /* Teal/cyan blue from "Tech" in the logo */
+  color: var(--light-color);
+  border: none;
+}
+
+.btn-secondary-custom {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  color: var(--primary-color); /* Black text to match "Vision One" in logo */
+  border: 1px solid var(--primary-color); /* Black border */
+}
+
+.btn-primary-custom:hover, .btn-secondary-custom:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Product section styles */
+.product-section {
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 20vh 2rem 5vh;
+}
+
+.product-content {
+  text-align: center;
+  max-width: 800px;
+}
+
+.product-content h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
+}
+
+.product-content p {
+  font-size: 14px;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+/* About section styles */
+.about-section {
+  padding: 5rem 2rem;
+  background-color: var(--light-color);
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-content h2 {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.5px;
+  color: var(--primary-color);
+}
+
+.about-content p {
+  font-size: 14px;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  color: var(--secondary-color);
+}
+
+/* Footer styles */
+.footer {
+  background-color: var(--light-color); /* Tesla uses white footer */
+  color: var(--secondary-color);
+  padding: 3rem 2rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-links a {
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.footer-links a:hover {
+  color: var(--accent-color); /* Teal/cyan blue from "Tech" in the logo */
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 0.85rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .product-content h2 {
+    font-size: 2rem;
+  }
+
+  .product-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Animation styles */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scroll indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0) translateX(-50%);
+  }
+  40% {
+    transform: translateY(-20px) translateX(-50%);
+  }
+  60% {
+    transform: translateY(-10px) translateX(-50%);
+  }
+}
