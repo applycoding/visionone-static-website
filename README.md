@@ -12,7 +12,7 @@ This is a Bootstrap-based website for Vision One Tech, designed with a Tesla-ins
 
 ## Pages
 
-- **Home**: Main landing page with sections for Sky Rovr, TheCityBits, and Basin1
+- **Home**: Main landing page with sections for Sky Rovr, TheCityBits, and PulseOne
 - **About**: Detailed information about Vision One Tech, its mission, and team
 - **Contact**: Contact form and company information
 
